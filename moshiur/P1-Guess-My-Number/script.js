@@ -3,7 +3,7 @@
 let hiddenNumber = Math.floor( Math.random() * 20 ) + 1;
 let score = 20;
 
-let messageElement = document.querySelector(".message"); 
+let messageElement = document.querySelector(".message");  
 let guessElement = document.querySelector(".guess");
 let scoreElement = document.querySelector(".score");
 let checkElement = document.querySelector(".check");

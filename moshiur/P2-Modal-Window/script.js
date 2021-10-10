@@ -31,11 +31,12 @@ document.addEventListener("keydown", function(event) {
 
 // add an extra button 
 
-let divElement = modal.appendChild("div");
-let buttonElement = modal.appendChild("button");
-buttonElement.innerText = "Click Me!"
+let divElement = document.createElement("div");
+let buttonElement = document.createElement("button");
+buttonElement.innerText = "Close";
 buttonElement.addEventListener("click", closeModal);
+divElement.appendChild(buttonElement);
+modal.appendChild(divElement);
 
-divElement.append(buttonElement);
-modal.append(divElement);
+
 

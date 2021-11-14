@@ -17,13 +17,14 @@ body {
   height: 100vh;
   color: #333;
   background-image: linear-gradient(to top left, #753682 0%, #bf2e34 100%);
-  display: flex;
+  /* display: flex; */
   align-items: center;
   justify-content: center;
 }
 
 /* LAYOUT */
 main {
+  display: flex;
   position: relative;
   width: 100rem;
   height: 60rem;
@@ -38,7 +39,7 @@ main {
 
 .player {
   flex: 50%;
-  padding: 9rem;
+  padding: 3rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -101,9 +102,10 @@ main {
 
 /* ABSOLUTE POSITIONED ELEMENTS */
 .btn {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
+  position: relative;
+  /* left: 50%; */
+  /* transform: translateX(-50%); */
+  margin: 10px 0px;
   color: #444;
   background: none;
   border: none;
@@ -129,7 +131,7 @@ main {
   margin-right: 0.7rem;
 }
 
-.btn--new {
+/* .btn--new {
   top: 4rem;
 }
 .btn--roll {
@@ -137,7 +139,7 @@ main {
 }
 .btn--hold {
   top: 46.1rem;
-}
+} */
 
 .btn:active {
   transform: translate(-50%, 3px);
@@ -149,10 +151,10 @@ main {
 }
 
 .dice {
-  position: absolute;
-  left: 50%;
+  position: relative;
+  /* left: 50%;
   top: 16.5rem;
-  transform: translateX(-50%);
+  transform: translateX(-50%); */
   height: 10rem;
   box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.2);
 }
